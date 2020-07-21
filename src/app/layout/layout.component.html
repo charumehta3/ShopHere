@@ -1,0 +1,24 @@
+<div id="header">
+  <span class="imageSpan">
+    <img src="../../../assets/images/logo.jpeg" width="50px" height="50px" />
+  </span>
+  <span>
+    <app-search #search></app-search>
+  </span>
+  <span>
+    <span> welcome {{ username }}</span>
+
+    <span id="cart">
+      <app-cart></app-cart>
+    </span>
+  </span>
+</div>
+<div id="content">  
+  <span id="lhs">
+    <app-filter></app-filter>
+  </span>
+  <span id="products">
+    <app-product #product></app-product>
+  </span>
+</div>
+<div id="footer">@abc.com</div>

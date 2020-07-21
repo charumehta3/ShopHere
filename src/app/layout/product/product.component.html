@@ -1,0 +1,20 @@
+<div id="container" *ngFor="let data of response">
+    <div class="item-img" attr.id="{{data.id}}">
+      <img attr.src="{{data.image}}" />
+      <div class="discount">
+          10%
+      </div>
+    </div>
+    <div>
+      <span id="title">{{data.title}}</span>
+      <span class="fl-right">{{data.colour.color}}</span>
+    </div>
+    <div>
+      <span id="brand">{{data.brand}}</span>
+      <span class="fl-right"><input type="button" value="Add" (click)="add(data)"/></span>
+    </div>
+    <div>
+      {{data.price.final_price}}$
+    </div>
+
+</div>
